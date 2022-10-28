@@ -1,0 +1,76 @@
+.topicos__visitados {
+    height: 250px;
+    padding: 0 1em;
+    background: var(--azul-degrade);
+}
+
+.topicos__titulo {
+    font-family: var(--fonte-principal);
+    text-transform: uppercase;
+    color: var(--fundo-cabecalho);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    padding: 1.5em 0 2em 0;
+}
+
+.lista__topicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px 10px;
+}
+
+.topicos__link {
+    color: var(--fundo-cabecalho);
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 1em;
+    background: var(--laranja);
+}
+
+@media screen and (min-width: 1024px) {
+    .topicos__titulo {
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .topicos__link {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .topicos__visitados {
+        padding: 1em 6em 2em 6em;
+    }
+
+    .topicos__item {
+        margin: 1em 1em;
+    }
+
+    .topicos__visitados {
+        height: auto;
+    }
+
+    .topicos__link:hover {
+        font-size: 28px;
+        transition: 0.4s;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .topicos__visitados {
+        padding: 1em 25vw 5em 25vw;
+    }
+
+    .topicos__titulo {
+        font-size: 32px;
+    }
+
+    .topicos__link:hover {
+        font-size: 28px;
+        transition: 0.4s;
+    }
+}
